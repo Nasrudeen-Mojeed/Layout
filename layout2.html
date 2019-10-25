@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Layout2</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		.menu {
+			float: left;
+			width: 20%;
+			text-align: left;
+			background-color: #EEE8AA;
+			height: 400px;
+			
+		}
+		.menuitem {
+			padding: 8px;
+			margin-top: 7px;
+			display: block;
+			background-color: powderblue;
+		}
+		.main {
+			float: left;
+			width: 60%;
+			padding: 0 20px;
+			
+		}
+		
+		@media only screen and (max-width: 620px) {
+			.menu, .main {width: 100%}
+		}
+		header {
+			background-color: gray;
+			font-size: 40px;
+			height: 200px;
+			padding: 70px;
+
+		}
+		
+	</style>
+</head>
+<body style="font-family: vadana;">
+	<div>
+	<header>
+		PROCESS LAYOUT EXAMPLE
+	</header>
+</div>
+	<div style="overflow: auto;">
+		<div class="menu">
+			<p>Main Menu</p>
+			<p>Link one</p>
+			<p>Link two</p>
+			<p>Link three</p>
+			<p>Link four</p>
+		</div>
+	
+	<div class="main">
+	<p>This is an example layout using the tables</p>
+	</div>
+</div>
+<div style="background-color: gray; text-align: center; margin-top: 7px; padding: 10px;" ><strong>www.Example of layout using table.com</strong></div>
+</body>
+</html>
